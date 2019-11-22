@@ -1,0 +1,28 @@
+﻿<Window x:Class="Calcolo_entropia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calcolo_entropia"
+        mc:Ignorable="d"
+        Title="Calcolo entropia " Height="612.622" Width="1341.261">
+    <Grid Background="#FFE65816">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnCaricaFile" Content="Carica il file" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" Width="154" Height="71" Click="btnCaricaFile_Click" FontFamily="Comic Sans MS"/>
+        <ListBox x:Name="lstRipetizione" HorizontalAlignment="Left" Height="496" Margin="564,55,0,0" VerticalAlignment="Top" Width="294" FontFamily="Comic Sans MS"/>
+        <Label x:Name="lblNCaratteri" Content="" HorizontalAlignment="Left" Margin="136,446,0,0" VerticalAlignment="Top" Width="245" Height="41" FontFamily="Comic Sans MS"/>
+        <Button x:Name="btnEntropia" Content="Entropia" HorizontalAlignment="Left" Margin="219,24,0,0" VerticalAlignment="Top" Width="147" Height="41" Click="btnEntropia_Click" FontFamily="Comic Sans MS"/>
+        <Label x:Name="lblEntropia" Content="" HorizontalAlignment="Left" Margin="136,400,0,0" VerticalAlignment="Top" Width="252" Height="41" FontFamily="Comic Sans MS"/>
+        <ProgressBar x:Name="prgBar" HorizontalAlignment="Left" Height="18" Margin="219,367,0,0" VerticalAlignment="Top" Width="169"/>
+        <Button x:Name="btnHuffman" Content="Codifica di Huffman" HorizontalAlignment="Left" Margin="219,88,0,0" VerticalAlignment="Top" Width="147" Height="52" Click="btnHuffman_Click" FontFamily="Comic Sans MS"/>
+        <ListBox x:Name="lstCodiciHuffman" HorizontalAlignment="Left" Height="496" Margin="938,55,0,0" VerticalAlignment="Top" Width="294" FontFamily="Comic Sans MS"/>
+        <Button x:Name="btnCodificaDocumento" Content="Codifica l'intero documento" HorizontalAlignment="Left" Margin="219,171,0,0" VerticalAlignment="Top" Width="169" Height="55" Click="btnCodificaDocumento_Click" FontFamily="Comic Sans MS"/>
+        <Button x:Name="btnDecodificaDocumento" Content="Decodifica" HorizontalAlignment="Left" Margin="219,250,0,0" VerticalAlignment="Top" Width="169" Height="74" Click="btnDecodificaDocumento_Click" FontFamily="Comic Sans MS"/>
+        <Label x:Name="lblCaratteriFile" Content="Caratteri nel testo:" HorizontalAlignment="Left" Margin="564,24,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
+        <Label x:Name="lblStatoOp" Content="" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" Width="174" FontFamily="Comic Sans MS"/>
+        <Label x:Name="lblCodifiche" Content="Caratteri codificati:" HorizontalAlignment="Left" Margin="938,24,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
+
+    </Grid>
+</Window>
